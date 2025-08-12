@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kontakt – Be you Beauty</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Open+Sans:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-8no9KFxa9WbBjrIfi93tP4OBcGfsIoHygi3FyBIaM0imSuK+PpZynH1DvZOkaB54HWH9RwseKk60DM0/z+XkEg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="logo">Be you Beauty</div>
+      <ul>
+        <li><a href="index.html">Start</a></li>
+        <li><a href="about.html">Über mich</a></li>
+        <li><a href="services.html">Leistungen</a></li>
+        <li><a href="contact.html">Kontakt</a></li>
+        <li><a href="booking.html">Buchung</a></li>
+      </ul>
+    </nav>
+
+    <header class="sub-hero">
+      <div class="hero-overlay">
+        <h1>Kontakt</h1>
+      </div>
+    </header>
+
+    <section class="section contact-page">
+      <div class="container">
+        <h2>Sprechen Sie uns an</h2>
+        <p>
+          Haben Sie Fragen zu unseren Behandlungen oder m&ouml;chten Sie einen
+          Termin vereinbaren? Sie erreichen uns telefonisch, per E‑Mail oder
+          bequem &uuml;ber die Online‑Buchung.
+        </p>
+        <div class="contact-grid">
+          <div class="contact-info">
+            <ul>
+              <li>
+              <strong>Adresse:</strong> M&uuml;hlenweg&nbsp;144, 26419&nbsp;Schortens
+              </li>
+              <li><strong>Telefon:</strong> 04461 123456</li>
+              <li>
+                <strong>E‑Mail:</strong>
+                <a href="mailto:info@beyoubeauty.example">info@beyoubeauty.example</a>
+              </li>
+            </ul>
+            <div style="margin-top: 20px;">
+              <a
+                href="https://desires.salonized.com/widget_bookings/new?layout=standalone&hl=de-DE"
+                class="btn btn-primary"
+                target="_blank"
+                >Jetzt Termin buchen</a
+              >
+            </div>
+          </div>
+          <div class="contact-form">
+            <form
+              action="mailto:info@beyoubeauty.example"
+              method="post"
+              enctype="text/plain"
+            >
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" required />
+
+              <label for="email">E‑Mail</label>
+              <input type="email" id="email" name="email" required />
+
+              <label for="message">Nachricht</label>
+              <textarea id="message" name="message" rows="4" required></textarea>
+
+              <button type="submit" class="btn btn-primary">Senden</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="container footer-content">
+        <p>&copy; 2025&nbsp;Be you Beauty – Fu&szlig;pflege in Schortens.</p>
+      </div>
+    </footer>
+  </body>
+</html>
