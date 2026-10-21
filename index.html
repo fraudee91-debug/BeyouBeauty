@@ -139,6 +139,7 @@
           Vorher/Nachher-Bilder: einfach als JPG in den Ordner assets/img legen:
             vorher-1.jpg / nachher-1.jpg  →  Hornhaut & Schrunden an der Ferse
             vorher-2.jpg / nachher-2.jpg  →  Hühnerauge am Zeh
+            vorher-3.jpg / nachher-3.jpg  →  Hornhaut zwischen den Zehen
           Für ein weiteres Paar einen <figure class="ba">-Block kopieren und
           die Nummer anpassen.
           Fehlt ein Bild, wird automatisch der Platzhalter angezeigt.
@@ -162,6 +163,15 @@
               <input type="range" min="4" max="96" value="50" aria-label="Vorher/Nachher vergleichen" />
             </div>
             <figcaption>Hühnerauge am Zeh</figcaption>
+          </figure>
+          <figure class="ba">
+            <div class="ba-stage">
+              <div class="ba-pane ba-after"><div class="ba-placeholder">Nachher</div><img src="assets/img/nachher-3.jpg" alt="Zehenzwischenraum nach der Behandlung" loading="lazy" onerror="this.remove()" /></div>
+              <div class="ba-pane ba-before"><div class="ba-placeholder">Vorher</div><img src="assets/img/vorher-3.jpg" alt="Hornhaut zwischen den Zehen vor der Behandlung" loading="lazy" onerror="this.remove()" /></div>
+              <span class="ba-handle" aria-hidden="true"></span>
+              <input type="range" min="4" max="96" value="50" aria-label="Vorher/Nachher vergleichen" />
+            </div>
+            <figcaption>Hornhaut zwischen den Zehen</figcaption>
           </figure>
         </div>
       </div>

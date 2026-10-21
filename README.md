@@ -34,6 +34,7 @@ Bilder als JPG in `assets/img/` ablegen – ohne HTML zu ändern:
 |---|---|
 | `vorher-1.jpg` / `nachher-1.jpg` | Hornhaut & Schrunden an der Ferse |
 | `vorher-2.jpg` / `nachher-2.jpg` | Hühnerauge am Zeh |
+| `vorher-3.jpg` / `nachher-3.jpg` | Hornhaut zwischen den Zehen |
 
 Bilder austauschen = Datei mit gleichem Namen ersetzen. Für ein weiteres Paar
 in `index.html` einen `<figure class="ba">`-Block kopieren und die Nummer
