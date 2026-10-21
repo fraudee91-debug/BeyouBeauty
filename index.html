@@ -241,16 +241,29 @@
             <strong>montags bis mittwochs</strong>. Buchen Sie bequem online
             oder rufen Sie mich an.
           </p>
-          <div class="actions">
-            <a
+          <!--
+            Online-Buchung (Salonized): Der Kalender wird erst nach Klick
+            geladen, damit vorher keine Daten an Salonized gehen.
+          -->
+          <div class="booking-widget" id="booking-widget">
+            <div class="booking-consent">
+              <button type="button" class="btn" id="booking-load">Online buchen</button>
+              <p class="note">
+                Mit dem Klick wird der Buchungskalender von Salonized geladen.
+                Dabei werden Daten an Salonized übertragen – mehr dazu in der
+                <a href="datenschutz.html#buchung">Datenschutzerklärung</a>.
+              </p>
+            </div>
+          </div>
+          <p class="booking-alt">
+            Lieber telefonisch? <a href="tel:+491794499122">0179 4499122</a>
+            · <a
               href="https://desires.salonized.com/widget_bookings/new?layout=standalone&amp;hl=de-DE"
-              class="btn"
               target="_blank"
               rel="noopener"
-              >Online buchen</a
+              >Buchung in neuem Fenster öffnen</a
             >
-            <a href="tel:+491794499122" class="btn btn-ghost">0179 4499122</a>
-          </div>
+          </p>
         </div>
       </div>
     </section>
@@ -320,6 +333,26 @@
         };
         range.addEventListener('input', update);
         update();
+      });
+
+      // Online-Buchung erst nach Klick laden (Datenschutz)
+      var bookingUrl = 'https://desires.salonized.com/widget_bookings/new?layout=standalone&hl=de-DE';
+      var loadBooking = function () {
+        var box = document.getElementById('booking-widget');
+        if (box.querySelector('iframe')) return;
+        var frame = document.createElement('iframe');
+        frame.src = bookingUrl;
+        frame.title = 'Online-Terminbuchung';
+        frame.setAttribute('allow', 'payment');
+        box.innerHTML = '';
+        box.classList.add('is-loaded');
+        box.appendChild(frame);
+      };
+      document.getElementById('booking-load').addEventListener('click', loadBooking);
+
+      // Alle „Termin buchen“-Buttons öffnen direkt den Kalender
+      document.querySelectorAll('a[href="#termin"]').forEach(function (link) {
+        link.addEventListener('click', loadBooking);
       });
     </script>
   </body>
