@@ -131,7 +131,8 @@
           <h2>Vorher &amp; Nachher</h2>
           <span class="divider" aria-hidden="true"></span>
           <p class="lead">
-            Ziehen Sie den Regler, um das Ergebnis meiner Behandlungen zu sehen.
+            Echte Ergebnisse aus meiner Praxis – links vor, rechts nach der
+            Behandlung.
           </p>
         </div>
 
@@ -147,29 +148,23 @@
         -->
         <div class="ba-grid">
           <figure class="ba">
-            <div class="ba-stage">
-              <div class="ba-pane ba-after"><div class="ba-placeholder">Nachher</div><img src="assets/img/nachher-1.jpg" alt="Ferse nach der Behandlung" loading="lazy" onerror="this.remove()" /></div>
+            <div class="ba-pair">
               <div class="ba-pane ba-before"><div class="ba-placeholder">Vorher</div><img src="assets/img/vorher-1.jpg" alt="Ferse mit Hornhaut und Schrunde vor der Behandlung" loading="lazy" onerror="this.remove()" /></div>
-              <span class="ba-handle" aria-hidden="true"></span>
-              <input type="range" min="4" max="96" value="50" aria-label="Vorher/Nachher vergleichen" />
+              <div class="ba-pane ba-after"><div class="ba-placeholder">Nachher</div><img src="assets/img/nachher-1.jpg" alt="Ferse nach der Behandlung" loading="lazy" onerror="this.remove()" /></div>
             </div>
             <figcaption>Hornhaut &amp; Schrunden an der Ferse</figcaption>
           </figure>
           <figure class="ba">
-            <div class="ba-stage">
-              <div class="ba-pane ba-after"><div class="ba-placeholder">Nachher</div><img src="assets/img/nachher-2.jpg" alt="Zeh nach Entfernung des Hühnerauges" loading="lazy" onerror="this.remove()" /></div>
+            <div class="ba-pair">
               <div class="ba-pane ba-before"><div class="ba-placeholder">Vorher</div><img src="assets/img/vorher-2.jpg" alt="Zeh mit Hühnerauge vor der Behandlung" loading="lazy" onerror="this.remove()" /></div>
-              <span class="ba-handle" aria-hidden="true"></span>
-              <input type="range" min="4" max="96" value="50" aria-label="Vorher/Nachher vergleichen" />
+              <div class="ba-pane ba-after"><div class="ba-placeholder">Nachher</div><img src="assets/img/nachher-2.jpg" alt="Zeh nach Entfernung des Hühnerauges" loading="lazy" onerror="this.remove()" /></div>
             </div>
             <figcaption>Hühnerauge am Zeh</figcaption>
           </figure>
           <figure class="ba">
-            <div class="ba-stage">
-              <div class="ba-pane ba-after"><div class="ba-placeholder">Nachher</div><img src="assets/img/nachher-3.jpg" alt="Zehenzwischenraum nach der Behandlung" loading="lazy" onerror="this.remove()" /></div>
+            <div class="ba-pair">
               <div class="ba-pane ba-before"><div class="ba-placeholder">Vorher</div><img src="assets/img/vorher-3.jpg" alt="Hornhaut zwischen den Zehen vor der Behandlung" loading="lazy" onerror="this.remove()" /></div>
-              <span class="ba-handle" aria-hidden="true"></span>
-              <input type="range" min="4" max="96" value="50" aria-label="Vorher/Nachher vergleichen" />
+              <div class="ba-pane ba-after"><div class="ba-placeholder">Nachher</div><img src="assets/img/nachher-3.jpg" alt="Zehenzwischenraum nach der Behandlung" loading="lazy" onerror="this.remove()" /></div>
             </div>
             <figcaption>Hornhaut zwischen den Zehen</figcaption>
           </figure>
@@ -318,16 +313,6 @@
         link.addEventListener('click', function () {
           document.getElementById('nav-toggle').checked = false;
         });
-      });
-
-      // Vorher/Nachher-Regler
-      document.querySelectorAll('.ba-stage').forEach(function (stage) {
-        var range = stage.querySelector('input');
-        var update = function () {
-          stage.style.setProperty('--pos', range.value + '%');
-        };
-        range.addEventListener('input', update);
-        update();
       });
 
       // Online-Buchung (offizielles Salonized-Widget) erst nach Klick laden (Datenschutz)

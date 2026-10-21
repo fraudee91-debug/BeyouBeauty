@@ -408,16 +408,23 @@ svg {
 /* Vorher / Nachher */
 .ba-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 28px;
+  grid-template-columns: 1fr;
+  gap: 56px;
+  max-width: 900px;
+  margin: 0 auto;
 }
 
 .ba {
   margin: 0;
 }
 
-.ba-stage {
-  --pos: 50%;
+.ba-pair {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px;
+}
+
+.ba-pane {
   position: relative;
   aspect-ratio: 1;
   overflow: hidden;
@@ -425,9 +432,8 @@ svg {
   background: var(--card);
 }
 
-.ba-pane {
-  position: absolute;
-  inset: 0;
+.ba-after {
+  border-color: var(--gold);
 }
 
 .ba-pane img {
@@ -436,35 +442,6 @@ svg {
   width: 100%;
   height: 100%;
   object-fit: cover;
-}
-
-.ba-before {
-  clip-path: inset(0 calc(100% - var(--pos)) 0 0);
-}
-
-/* kleine Beschriftung in den Ecken */
-.ba-pane::after {
-  position: absolute;
-  top: 12px;
-  padding: 4px 10px;
-  background: rgba(21, 22, 27, 0.75);
-  border: 1px solid var(--line);
-  font-family: 'Cinzel', serif;
-  font-size: 11px;
-  letter-spacing: 0.15em;
-  text-transform: uppercase;
-  color: var(--gold-light);
-  pointer-events: none;
-}
-
-.ba-before::after {
-  content: 'Vorher';
-  left: 12px;
-}
-
-.ba-after::after {
-  content: 'Nachher';
-  right: 12px;
 }
 
 .ba-placeholder {
@@ -476,66 +453,41 @@ svg {
   letter-spacing: 0.2em;
   text-transform: uppercase;
   font-size: 14px;
-  color: var(--gold);
-}
-
-.ba-after .ba-placeholder {
-  background: linear-gradient(135deg, #2a2620, #1f2027);
-  justify-content: flex-end;
-  padding-right: 12%;
-}
-
-.ba-before .ba-placeholder {
-  background: linear-gradient(135deg, #1f2027, #18191e);
-  justify-content: flex-start;
-  padding-left: 12%;
   color: var(--muted);
 }
 
-.ba-handle {
+/* Beschriftung oben links im Bild */
+.ba-pane::after {
   position: absolute;
-  top: 0;
-  bottom: 0;
-  left: var(--pos);
-  width: 1px;
-  background: var(--gold);
-  pointer-events: none;
+  top: 12px;
+  left: 12px;
+  z-index: 1;
+  padding: 5px 12px;
+  background: rgba(21, 22, 27, 0.8);
+  border: 1px solid var(--line);
+  font-family: 'Cinzel', serif;
+  font-size: 12px;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--text);
 }
 
-.ba-handle::after {
-  content: '‹ ›';
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: var(--bg);
-  border: 1px solid var(--gold);
-  color: var(--gold);
-  font-size: 18px;
-  line-height: 1;
+.ba-before::after {
+  content: 'Vorher';
 }
 
-.ba-stage input {
-  position: absolute;
-  inset: 0;
-  width: 100%;
-  height: 100%;
-  margin: 0;
-  opacity: 0;
-  cursor: ew-resize;
+.ba-after::after {
+  content: 'Nachher';
+  color: #1a1a1f;
+  background: var(--gold-gradient);
+  border-color: var(--gold);
 }
 
 .ba figcaption {
-  margin-top: 14px;
+  margin-top: 16px;
   text-align: center;
   font-family: 'Cinzel', serif;
-  font-size: 14px;
+  font-size: 15px;
   letter-spacing: 0.1em;
   color: var(--gold);
 }
@@ -765,8 +717,7 @@ svg {
   .features-grid,
   .price-grid,
   .about-grid,
-  .contact-grid,
-  .ba-grid {
+  .contact-grid {
     grid-template-columns: 1fr;
   }
 
@@ -779,10 +730,6 @@ svg {
     margin: 0 auto;
   }
 
-  .ba-grid {
-    max-width: 460px;
-    margin: 0 auto;
-  }
 
   .section {
     padding: 72px 0;
@@ -857,6 +804,21 @@ svg {
 }
 
 @media (max-width: 480px) {
+  .ba-pair {
+    gap: 8px;
+  }
+
+  .ba-pane::after {
+    top: 6px;
+    left: 6px;
+    padding: 3px 7px;
+    font-size: 10px;
+  }
+
+  .ba-grid {
+    gap: 40px;
+  }
+
   .brand-icon {
     height: 34px;
   }
