@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Datenschutz – BeYou Beauty</title>
+    <meta name="robots" content="noindex" />
+    <meta
+      name="description"
+      content="BeYou Beauty – Fußpflege & Mee(h)r in Wilhelmshaven. Medizinische Fußpflege, Nagelkorrekturspangen, Massagen und Beauty von Désirée Brunken, staatlich geprüfte Kosmetikerin und Podologin in Ausbildung."
+    />
+    <link rel="icon" href="assets/logo.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,700;1,500&family=Open+Sans:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Navigation -->
+    <nav class="navbar">
+      <a href="index.html#start" class="brand">
+        <img src="assets/logo.svg" alt="" width="44" height="44" />
+        <span>
+          <strong>BeYou Beauty</strong>
+          <small>Fußpflege &amp; Mee(h)r</small>
+        </span>
+      </a>
+      <input type="checkbox" id="nav-toggle" class="nav-toggle" />
+      <label for="nav-toggle" class="nav-toggle-label" aria-label="Menü öffnen">
+        <span></span>
+      </label>
+      <ul>
+        <li><a href="index.html#leistungen">Leistungen</a></li>
+        <li><a href="index.html#ueber-mich">Über mich</a></li>
+        <li><a href="index.html#kontakt">Kontakt</a></li>
+        <li><a href="index.html#termin" class="btn btn-small">Termin buchen</a></li>
+      </ul>
+    </nav>
+
+    <main class="section">
+      <div class="container legal">
+        <h1>Datenschutzerklärung</h1>
+        <h2>1. Verantwortliche</h2>
+        <p>
+          Désirée Brunken, BeYou Beauty – Fußpflege &amp; Mee(h)r,
+          Mühlenweg 144, 26384 Wilhelmshaven,
+          E‑Mail: <a href="mailto:info@desires-wellness-ammeer.de">info@desires-wellness-ammeer.de</a>
+        </p>
+        <h2>2. Hosting und Server‑Logfiles</h2>
+        <p>
+          Beim Aufruf dieser Website werden durch den Hosting‑Anbieter
+          automatisch Informationen (z.&nbsp;B. IP‑Adresse, Datum und Uhrzeit,
+          aufgerufene Seite, Browsertyp) in Server‑Logfiles gespeichert. Dies
+          ist zur sicheren Bereitstellung der Website erforderlich
+          (Art.&nbsp;6 Abs.&nbsp;1 lit.&nbsp;f DSGVO).
+        </p>
+        <h2>3. Google Fonts</h2>
+        <p>
+          Diese Seite nutzt Schriftarten von Google Fonts (Google Ireland
+          Limited). Beim Laden der Seite stellt Ihr Browser eine Verbindung zu
+          Servern von Google her, wobei Ihre IP‑Adresse übermittelt wird.
+          Rechtsgrundlage ist Art.&nbsp;6 Abs.&nbsp;1 lit.&nbsp;f DSGVO
+          (einheitliche, ansprechende Darstellung).
+        </p>
+        <h2>4. Online‑Terminbuchung (Salonized)</h2>
+        <p>
+          Für die Online‑Buchung verlinke ich auf den Dienst Salonized
+          (Salonized B.V., Niederlande). Erst wenn Sie den Link anklicken,
+          werden Daten an Salonized übertragen. Die dort eingegebenen Daten
+          verwende ich ausschließlich zur Terminvergabe
+          (Art.&nbsp;6 Abs.&nbsp;1 lit.&nbsp;b DSGVO).
+        </p>
+        <h2>5. Kontakt per Telefon oder E‑Mail</h2>
+        <p>
+          Wenn Sie mich kontaktieren, verarbeite ich Ihre Angaben nur zur
+          Bearbeitung Ihrer Anfrage. Gesundheitsdaten im Rahmen der
+          Fußpflege behandle ich vertraulich und nur mit Ihrer Einwilligung
+          (Art.&nbsp;9 Abs.&nbsp;2 lit.&nbsp;a bzw. h DSGVO).
+        </p>
+        <h2>6. Ihre Rechte</h2>
+        <p>
+          Sie haben das Recht auf Auskunft, Berichtigung, Löschung,
+          Einschränkung der Verarbeitung, Datenübertragbarkeit und
+          Widerspruch sowie das Recht, sich bei einer
+          Datenschutz‑Aufsichtsbehörde zu beschweren (in Niedersachsen: Die
+          Landesbeauftragte für den Datenschutz Niedersachsen).
+        </p>
+        <h2>7. Cookies</h2>
+        <p>Diese Website setzt selbst keine Cookies und verwendet kein Tracking.</p>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer-content">
+        <p>&copy; 2026 BeYou Beauty – Fußpflege &amp; Mee(h)r · Wilhelmshaven</p>
+        <p>
+          <a href="impressum.html">Impressum</a> ·
+          <a href="datenschutz.html">Datenschutz</a>
+        </p>
+        <p class="credits">
+          Strandfoto:
+          <a
+            href="https://commons.wikimedia.org/wiki/File:People_enjoying_beach_walk_(Unsplash).jpg"
+            target="_blank"
+            rel="noopener"
+            >Wikimedia Commons</a
+          >, CC0
+        </p>
+      </div>
+    </footer>
+    <script>
+      // Mobiles Menü nach Klick auf einen Link schließen
+      document.querySelectorAll('.navbar ul a').forEach(function (link) {
+        link.addEventListener('click', function () {
+          document.getElementById('nav-toggle').checked = false;
+        });
+      });
+    </script>
+  </body>
+</html>

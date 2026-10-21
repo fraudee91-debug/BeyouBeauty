@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Impressum – BeYou Beauty</title>
+    <meta name="robots" content="noindex" />
+    <meta
+      name="description"
+      content="BeYou Beauty – Fußpflege & Mee(h)r in Wilhelmshaven. Medizinische Fußpflege, Nagelkorrekturspangen, Massagen und Beauty von Désirée Brunken, staatlich geprüfte Kosmetikerin und Podologin in Ausbildung."
+    />
+    <link rel="icon" href="assets/logo.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,700;1,500&family=Open+Sans:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Navigation -->
+    <nav class="navbar">
+      <a href="index.html#start" class="brand">
+        <img src="assets/logo.svg" alt="" width="44" height="44" />
+        <span>
+          <strong>BeYou Beauty</strong>
+          <small>Fußpflege &amp; Mee(h)r</small>
+        </span>
+      </a>
+      <input type="checkbox" id="nav-toggle" class="nav-toggle" />
+      <label for="nav-toggle" class="nav-toggle-label" aria-label="Menü öffnen">
+        <span></span>
+      </label>
+      <ul>
+        <li><a href="index.html#leistungen">Leistungen</a></li>
+        <li><a href="index.html#ueber-mich">Über mich</a></li>
+        <li><a href="index.html#kontakt">Kontakt</a></li>
+        <li><a href="index.html#termin" class="btn btn-small">Termin buchen</a></li>
+      </ul>
+    </nav>
+
+    <main class="section">
+      <div class="container legal">
+        <h1>Impressum</h1>
+        <h2>Angaben gemäß § 5 DDG</h2>
+        <p>
+          BeYou Beauty – Fußpflege &amp; Mee(h)r<br />
+          Inhaberin: Désirée Brunken<br />
+          Staatlich geprüfte Kosmetikerin, Podologin in Ausbildung<br />
+          Mühlenweg 144<br />
+          26384 Wilhelmshaven
+        </p>
+        <h2>Kontakt</h2>
+        <p>
+          Telefon: <a href="tel:+494421774140">04421 774140</a><br />
+          Mobil: <a href="tel:+491794499122">0179 4499122</a><br />
+          E‑Mail: <a href="mailto:info@desires-wellness-ammeer.de">info@desires-wellness-ammeer.de</a>
+        </p>
+        <h2>Umsatzsteuer</h2>
+        <p>
+          <!-- TODO: USt‑IdNr. eintragen oder Hinweis auf Kleinunternehmerregelung (§ 19 UStG) -->
+          Umsatzsteuer‑Identifikationsnummer gemäß § 27a UStG: wird nachgetragen.
+        </p>
+        <h2>Verbraucherstreitbeilegung</h2>
+        <p>
+          Ich bin nicht bereit oder verpflichtet, an Streitbeilegungsverfahren
+          vor einer Verbraucherschlichtungsstelle teilzunehmen.
+        </p>
+        <h2>Bildnachweise</h2>
+        <p>
+          Strandfoto: „People enjoying beach walk“, Wikimedia Commons (CC0).<br />
+          Logo und Grafiken: BeYou Beauty.
+        </p>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer-content">
+        <p>&copy; 2026 BeYou Beauty – Fußpflege &amp; Mee(h)r · Wilhelmshaven</p>
+        <p>
+          <a href="impressum.html">Impressum</a> ·
+          <a href="datenschutz.html">Datenschutz</a>
+        </p>
+        <p class="credits">
+          Strandfoto:
+          <a
+            href="https://commons.wikimedia.org/wiki/File:People_enjoying_beach_walk_(Unsplash).jpg"
+            target="_blank"
+            rel="noopener"
+            >Wikimedia Commons</a
+          >, CC0
+        </p>
+      </div>
+    </footer>
+    <script>
+      // Mobiles Menü nach Klick auf einen Link schließen
+      document.querySelectorAll('.navbar ul a').forEach(function (link) {
+        link.addEventListener('click', function () {
+          document.getElementById('nav-toggle').checked = false;
+        });
+      });
+    </script>
+  </body>
+</html>
