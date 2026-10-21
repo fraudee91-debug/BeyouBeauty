@@ -136,17 +136,18 @@
         </div>
 
         <!--
-          Vorher/Nachher-Bilder: Für jedes Paar ein <figure class="ba"> mit
-          zwei Bildern (gleiches Format, z. B. 800×800) anlegen:
-            <div class="ba-pane ba-after"><img src="assets/img/nachher-1.jpg" alt="…"></div>
-            <div class="ba-pane ba-before"><img src="assets/img/vorher-1.jpg" alt="…"></div>
-          Die Platzhalter unten werden dann ersetzt.
+          Vorher/Nachher-Bilder: einfach als JPG in den Ordner assets/img legen:
+            vorher-1.jpg / nachher-1.jpg  →  Medizinische Fußpflege
+            vorher-2.jpg / nachher-2.jpg  →  Nagelkorrekturspange
+            vorher-3.jpg / nachher-3.jpg  →  Fußpflege mit Shellac
+          Fehlt ein Bild, wird automatisch der Platzhalter angezeigt.
+          Am besten quadratisch, ca. 1000×1000 Pixel.
         -->
         <div class="ba-grid">
           <figure class="ba">
             <div class="ba-stage">
-              <div class="ba-pane ba-after"><div class="ba-placeholder">Nachher</div></div>
-              <div class="ba-pane ba-before"><div class="ba-placeholder">Vorher</div></div>
+              <div class="ba-pane ba-after"><div class="ba-placeholder">Nachher</div><img src="assets/img/nachher-1.jpg" alt="Nachher" loading="lazy" onerror="this.remove()" /></div>
+              <div class="ba-pane ba-before"><div class="ba-placeholder">Vorher</div><img src="assets/img/vorher-1.jpg" alt="Vorher" loading="lazy" onerror="this.remove()" /></div>
               <span class="ba-handle" aria-hidden="true"></span>
               <input type="range" min="0" max="100" value="50" aria-label="Vorher/Nachher vergleichen" />
             </div>
@@ -154,8 +155,8 @@
           </figure>
           <figure class="ba">
             <div class="ba-stage">
-              <div class="ba-pane ba-after"><div class="ba-placeholder">Nachher</div></div>
-              <div class="ba-pane ba-before"><div class="ba-placeholder">Vorher</div></div>
+              <div class="ba-pane ba-after"><div class="ba-placeholder">Nachher</div><img src="assets/img/nachher-2.jpg" alt="Nachher" loading="lazy" onerror="this.remove()" /></div>
+              <div class="ba-pane ba-before"><div class="ba-placeholder">Vorher</div><img src="assets/img/vorher-2.jpg" alt="Vorher" loading="lazy" onerror="this.remove()" /></div>
               <span class="ba-handle" aria-hidden="true"></span>
               <input type="range" min="0" max="100" value="50" aria-label="Vorher/Nachher vergleichen" />
             </div>
@@ -163,8 +164,8 @@
           </figure>
           <figure class="ba">
             <div class="ba-stage">
-              <div class="ba-pane ba-after"><div class="ba-placeholder">Nachher</div></div>
-              <div class="ba-pane ba-before"><div class="ba-placeholder">Vorher</div></div>
+              <div class="ba-pane ba-after"><div class="ba-placeholder">Nachher</div><img src="assets/img/nachher-3.jpg" alt="Nachher" loading="lazy" onerror="this.remove()" /></div>
+              <div class="ba-pane ba-before"><div class="ba-placeholder">Vorher</div><img src="assets/img/vorher-3.jpg" alt="Vorher" loading="lazy" onerror="this.remove()" /></div>
               <span class="ba-handle" aria-hidden="true"></span>
               <input type="range" min="0" max="100" value="50" aria-label="Vorher/Nachher vergleichen" />
             </div>

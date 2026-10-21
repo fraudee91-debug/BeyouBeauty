@@ -26,6 +26,19 @@ Quellen erlaubt sein:
 | Schriften (Google Fonts) | `fonts.googleapis.com`, `fonts.gstatic.com` |
 | Online-Buchung (Salonized-Widget, lädt erst nach Klick) | `static-widget.salonized.com`, `*.salonized.com` (Skript und iframe) |
 
+## Vorher/Nachher-Bilder einfügen
+
+Bilder als JPG in `assets/img/` ablegen – ohne HTML zu ändern:
+
+| Dateien | Behandlung |
+|---|---|
+| `vorher-1.jpg` / `nachher-1.jpg` | Medizinische Fußpflege |
+| `vorher-2.jpg` / `nachher-2.jpg` | Nagelkorrekturspange |
+| `vorher-3.jpg` / `nachher-3.jpg` | Fußpflege mit Shellac |
+
+Fehlt ein Bild, erscheint automatisch der Platzhalter. Ideal: quadratisch,
+ca. 1000×1000 Pixel, Vorher und Nachher aus gleichem Winkel.
+
 ## Dateien
 
 | Datei | Inhalt |
