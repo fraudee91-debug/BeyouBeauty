@@ -51,8 +51,8 @@
         src="assets/logo.png"
         alt="Be you. – Fußpflege &amp; Podologin in Ausbildung, staatlich geprüfte Kosmetikerin"
         class="hero-logo"
-        width="900"
-        height="712"
+        width="761"
+        height="600"
       />
       <p class="hero-text">
         Fachkundige Fußpflege in ruhiger, edler Atmosphäre –
@@ -335,18 +335,18 @@
         update();
       });
 
-      // Online-Buchung erst nach Klick laden (Datenschutz)
-      var bookingUrl = 'https://desires.salonized.com/widget_bookings/new?layout=standalone&hl=de-DE';
+      // Online-Buchung (offizielles Salonized-Widget) erst nach Klick laden (Datenschutz)
       var loadBooking = function () {
         var box = document.getElementById('booking-widget');
-        if (box.querySelector('iframe')) return;
-        var frame = document.createElement('iframe');
-        frame.src = bookingUrl;
-        frame.title = 'Online-Terminbuchung';
-        frame.setAttribute('allow', 'payment');
-        box.innerHTML = '';
+        if (box.classList.contains('is-loaded')) return;
         box.classList.add('is-loaded');
-        box.appendChild(frame);
+        box.innerHTML =
+          '<div class="salonized-booking" data-company="3jwNu25hZkWbDM19UaF6e87A"' +
+          ' data-color="#d4b06a" data-language="de" data-height="700"' +
+          ' data-inline="true" data-outline="shadow"></div>';
+        var script = document.createElement('script');
+        script.src = 'https://static-widget.salonized.com/loader.js';
+        document.body.appendChild(script);
       };
       document.getElementById('booking-load').addEventListener('click', loadBooking);
 
