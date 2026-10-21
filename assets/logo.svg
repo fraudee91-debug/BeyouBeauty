@@ -1,6 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" role="img" aria-label="BeYou Logo">
-  <circle cx="60" cy="60" r="56" fill="#4a2a4c"/>
-  <circle cx="60" cy="60" r="50" fill="none" stroke="#d9b779" stroke-width="1.5"/>
-  <text x="60" y="66" text-anchor="middle" font-family="'Playfair Display', Georgia, serif" font-size="44" font-style="italic" fill="#fbf6ef">B<tspan fill="#d9b779">Y</tspan></text>
-  <path d="M28 82c6-5 11-5 16 0s11 5 16 0 11-5 16 0 11 5 16 0" fill="none" stroke="#7fb7b4" stroke-width="3" stroke-linecap="round"/>
-</svg>

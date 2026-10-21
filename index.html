@@ -3,16 +3,17 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>BeYou. Fußpflege &amp; Podologin i. A. in Wilhelmshaven</title>
+    <title>Be you. Fußpflege &amp; Podologin i. A. in Wilhelmshaven</title>
     <meta
       name="description"
-      content="BeYou. Fußpflege & Podologin i. A. in Wilhelmshaven. Medizinische Fußpflege, Nagelkorrekturspangen, Massagen und Beauty von Désirée Brunken, staatlich geprüfte Kosmetikerin und Podologin in Ausbildung."
+      content="Be you. Fußpflege & Podologin in Ausbildung in Wilhelmshaven. Medizinische Fußpflege, Nagelkorrekturspangen, Massagen und Beauty von Désirée Brunken, staatlich geprüfte Kosmetikerin."
     />
-    <link rel="icon" href="assets/logo.svg" type="image/svg+xml" />
+    <meta name="theme-color" content="#15161b" />
+    <link rel="icon" href="assets/favicon.png" type="image/png" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,700;1,500&family=Open+Sans:wght@400;600&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Great+Vibes&family=Lato:wght@300;400;700&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="style.css" />
@@ -20,12 +21,9 @@
   <body>
     <!-- Navigation -->
     <nav class="navbar">
-      <a href="#start" class="brand">
-        <img src="assets/logo.svg" alt="" width="44" height="44" />
-        <span>
-          <strong>BeYou.</strong>
-          <small>Fußpflege &amp; Podologin i. A.</small>
-        </span>
+      <a href="#start" class="brand" aria-label="Be you. – zum Seitenanfang">
+        <img src="assets/logo-icon.png" alt="" class="brand-icon" />
+        <img src="assets/logo-schrift.png" alt="Be you." class="brand-text" />
       </a>
       <input type="checkbox" id="nav-toggle" class="nav-toggle" />
       <label for="nav-toggle" class="nav-toggle-label" aria-label="Menü öffnen">
@@ -33,6 +31,7 @@
       </label>
       <ul>
         <li><a href="#leistungen">Leistungen</a></li>
+        <li><a href="#vorher-nachher">Vorher &amp; Nachher</a></li>
         <li><a href="#ueber-mich">Über mich</a></li>
         <li><a href="#kontakt">Kontakt</a></li>
         <li><a href="#termin" class="btn btn-small">Termin buchen</a></li>
@@ -41,23 +40,25 @@
 
     <!-- Hero -->
     <header id="start" class="hero">
-      <div class="hero-content">
-        <p class="eyebrow">Fußpflege · Podologin i. A. · Wilhelmshaven</p>
-        <h1>Gepflegte Füße.<br /><em>Fachkundig betreut.</em></h1>
-        <p>
-          Ich bin Désirée – staatlich geprüfte Kosmetikerin und
-          Podologin in Ausbildung. Bei mir bekommen Ihre Füße fachkundige
-          Pflege in entspannter Atmosphäre.
-        </p>
-        <div class="hero-actions">
-          <a href="#termin" class="btn">Termin buchen</a>
-          <a href="#leistungen" class="btn btn-ghost">Preise ansehen</a>
-        </div>
+      <img
+        src="assets/logo.png"
+        alt="Be you. – Fußpflege &amp; Podologin in Ausbildung, staatlich geprüfte Kosmetikerin"
+        class="hero-logo"
+        width="900"
+        height="712"
+      />
+      <p class="hero-text">
+        Fachkundige Fußpflege in ruhiger, edler Atmosphäre –
+        mitten in Wilhelmshaven.
+      </p>
+      <div class="actions">
+        <a href="#termin" class="btn">Termin buchen</a>
+        <a href="#leistungen" class="btn btn-ghost">Preise ansehen</a>
       </div>
     </header>
 
     <!-- Vorteile -->
-    <section class="features">
+    <section class="section section-tight">
       <div class="container features-grid">
         <div class="feature">
           <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2l7 3v6c0 5-3 9-7 11-4-2-7-6-7-11V5l7-3z"/><path d="M9 12l2 2 4-4"/></svg>
@@ -65,14 +66,14 @@
           <p>Sterile Instrumente und gründliche Desinfektion bei jeder Behandlung.</p>
         </div>
         <div class="feature">
-          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 19h16"/><path d="M7 15V9a5 5 0 0 1 10 0v6"/><path d="M12 4V2"/></svg>
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3l2.6 5.3 5.9.9-4.3 4.1 1 5.8L12 16.4l-5.2 2.7 1-5.8L3.5 9.2l5.9-.9z"/></svg>
           <h3>Fachwissen</h3>
           <p>Staatlich geprüfte Kosmetikerin, aktuell in der Ausbildung zur Podologin.</p>
         </div>
         <div class="feature">
-          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M2 15c2-2 4-2 6 0s4 2 6 0 4-2 6 0"/><path d="M2 10c2-2 4-2 6 0s4 2 6 0 4-2 6 0"/></svg>
-          <h3>Zeit zum Durchatmen</h3>
-          <p>Ruhige Termine ohne Hektik – Wellness mit Nordsee‑Gefühl.</p>
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 20c-4 0-7-3-7-7 3 0 5 1 7 3 2-2 4-3 7-3 0 4-3 7-7 7z"/><path d="M12 16c-1.5-2-2-4-2-6 0-2 1-4 2-6 1 2 2 4 2 6 0 2-.5 4-2 6z"/></svg>
+          <h3>Zeit für Sie</h3>
+          <p>Ruhige Termine ohne Hektik – damit Sie sich rundum wohlfühlen.</p>
         </div>
       </div>
     </section>
@@ -80,29 +81,20 @@
     <!-- Leistungen & Preise -->
     <section id="leistungen" class="section">
       <div class="container">
-        <p class="eyebrow center">Leistungen &amp; Preise</p>
-        <h2>Was ich für Sie tun kann</h2>
+        <div class="section-head">
+          <p class="script">Leistungen</p>
+          <h2>Behandlungen &amp; Preise</h2>
+          <span class="divider" aria-hidden="true"></span>
+        </div>
 
         <div class="price-grid">
           <article class="price-card">
             <h3>Fußpflege</h3>
             <ul class="price-list">
-              <li>
-                <span>Medizinische Fußpflege<small>60 Min.</small></span>
-                <b>45,00 €</b>
-              </li>
-              <li>
-                <span>Fußpflege inkl. Shellac<small>60 Min.</small></span>
-                <b>50,00 €</b>
-              </li>
-              <li>
-                <span>Lackieren (Zusatz)<small>15 Min.</small></span>
-                <b>8,00 €</b>
-              </li>
-              <li>
-                <span>Nagelkorrekturspange<small>25 Min.</small></span>
-                <b>65,00 €</b>
-              </li>
+              <li><span>Medizinische Fußpflege</span><i></i><b>45,00 €</b><small>60 Min.</small></li>
+              <li><span>Fußpflege inkl. Shellac</span><i></i><b>50,00 €</b><small>60 Min.</small></li>
+              <li><span>Lackieren (Zusatz)</span><i></i><b>8,00 €</b><small>15 Min.</small></li>
+              <li><span>Nagelkorrekturspange</span><i></i><b>65,00 €</b><small>25 Min.</small></li>
             </ul>
             <p class="note">Shellac biete ich bei Verdacht auf Nagelpilz nicht an.</p>
           </article>
@@ -110,58 +102,28 @@
           <article class="price-card">
             <h3>Massagen</h3>
             <ul class="price-list">
-              <li>
-                <span>Fußmassage<small>20 Min.</small></span>
-                <b>35,00 €</b>
-              </li>
-              <li>
-                <span>Wellness‑Massage<small>25 Min.</small></span>
-                <b>40,00 €</b>
-              </li>
-              <li>
-                <span>Wellness‑Massage<small>45 Min.</small></span>
-                <b>60,00 €</b>
-              </li>
+              <li><span>Fußmassage</span><i></i><b>35,00 €</b><small>20 Min.</small></li>
+              <li><span>Wellness‑Massage</span><i></i><b>40,00 €</b><small>25 Min.</small></li>
+              <li><span>Wellness‑Massage</span><i></i><b>60,00 €</b><small>45 Min.</small></li>
             </ul>
           </article>
 
           <article class="price-card">
             <h3>Augenblicke</h3>
             <ul class="price-list">
-              <li>
-                <span>Wimpernlifting inkl. Färben<small>60 Min.</small></span>
-                <b>60,00 €</b>
-              </li>
-              <li>
-                <span>Browlifting inkl. Färben<small>45 Min.</small></span>
-                <b>55,00 €</b>
-              </li>
-              <li>
-                <span>Augenbrauen färben<small>20 Min.</small></span>
-                <b>19,00 €</b>
-              </li>
-              <li>
-                <span>Wimpern färben<small>20 Min.</small></span>
-                <b>17,00 €</b>
-              </li>
-              <li>
-                <span>Augenbrauen‑Korrektur<small>20 Min.</small></span>
-                <b>20,00 €</b>
-              </li>
+              <li><span>Wimpernlifting inkl. Färben</span><i></i><b>60,00 €</b><small>60 Min.</small></li>
+              <li><span>Browlifting inkl. Färben</span><i></i><b>55,00 €</b><small>45 Min.</small></li>
+              <li><span>Augenbrauen färben</span><i></i><b>19,00 €</b><small>20 Min.</small></li>
+              <li><span>Wimpern färben</span><i></i><b>17,00 €</b><small>20 Min.</small></li>
+              <li><span>Augenbrauen‑Korrektur</span><i></i><b>20,00 €</b><small>20 Min.</small></li>
             </ul>
           </article>
 
           <article class="price-card">
             <h3>Waxing</h3>
             <ul class="price-list">
-              <li>
-                <span>Waxing Gesicht<small>20 Min.</small></span>
-                <b>20,00 €</b>
-              </li>
-              <li>
-                <span>Waxing Beine<small>60 Min.</small></span>
-                <b>80,00 €</b>
-              </li>
+              <li><span>Waxing Gesicht</span><i></i><b>20,00 €</b><small>20 Min.</small></li>
+              <li><span>Waxing Beine</span><i></i><b>80,00 €</b><small>60 Min.</small></li>
             </ul>
           </article>
         </div>
@@ -172,20 +134,73 @@
       </div>
     </section>
 
+    <!-- Vorher / Nachher -->
+    <section id="vorher-nachher" class="section section-alt">
+      <div class="container">
+        <div class="section-head">
+          <p class="script">Ergebnisse</p>
+          <h2>Vorher &amp; Nachher</h2>
+          <span class="divider" aria-hidden="true"></span>
+          <p class="lead">
+            Ziehen Sie den Regler, um das Ergebnis meiner Behandlungen zu sehen.
+          </p>
+        </div>
+
+        <!--
+          Vorher/Nachher-Bilder: Für jedes Paar ein <figure class="ba"> mit
+          zwei Bildern (gleiches Format, z. B. 800×800) anlegen:
+            <div class="ba-pane ba-after"><img src="assets/img/nachher-1.jpg" alt="…"></div>
+            <div class="ba-pane ba-before"><img src="assets/img/vorher-1.jpg" alt="…"></div>
+          Die Platzhalter unten werden dann ersetzt.
+        -->
+        <div class="ba-grid">
+          <figure class="ba">
+            <div class="ba-stage">
+              <div class="ba-pane ba-after"><div class="ba-placeholder">Nachher</div></div>
+              <div class="ba-pane ba-before"><div class="ba-placeholder">Vorher</div></div>
+              <span class="ba-handle" aria-hidden="true"></span>
+              <input type="range" min="0" max="100" value="50" aria-label="Vorher/Nachher vergleichen" />
+            </div>
+            <figcaption>Medizinische Fußpflege</figcaption>
+          </figure>
+          <figure class="ba">
+            <div class="ba-stage">
+              <div class="ba-pane ba-after"><div class="ba-placeholder">Nachher</div></div>
+              <div class="ba-pane ba-before"><div class="ba-placeholder">Vorher</div></div>
+              <span class="ba-handle" aria-hidden="true"></span>
+              <input type="range" min="0" max="100" value="50" aria-label="Vorher/Nachher vergleichen" />
+            </div>
+            <figcaption>Nagelkorrekturspange</figcaption>
+          </figure>
+          <figure class="ba">
+            <div class="ba-stage">
+              <div class="ba-pane ba-after"><div class="ba-placeholder">Nachher</div></div>
+              <div class="ba-pane ba-before"><div class="ba-placeholder">Vorher</div></div>
+              <span class="ba-handle" aria-hidden="true"></span>
+              <input type="range" min="0" max="100" value="50" aria-label="Vorher/Nachher vergleichen" />
+            </div>
+            <figcaption>Fußpflege inkl. Shellac</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
     <!-- Über mich -->
-    <section id="ueber-mich" class="section section-sand">
+    <section id="ueber-mich" class="section">
       <div class="container about-grid">
-        <img
-          src="assets/img/fuesse.jpg"
-          alt="Gepflegte Füße in goldenen Sandalen"
-          class="about-img"
-          loading="lazy"
-          width="800"
-          height="1080"
-        />
+        <div class="about-frame">
+          <img
+            src="assets/img/fuesse.jpg"
+            alt="Gepflegte Füße in goldenen Sandalen"
+            decoding="async"
+            width="800"
+            height="1080"
+          />
+        </div>
         <div>
-          <p class="eyebrow">Über mich</p>
+          <p class="script">Über mich</p>
           <h2 class="left">Hallo, ich bin Désirée</h2>
+          <span class="divider left" aria-hidden="true"></span>
           <p>
             Schon früh habe ich meine Leidenschaft für Schönheit und
             Körperpflege entdeckt. Nach meiner Ausbildung zur
@@ -209,97 +224,95 @@
     </section>
 
     <!-- Termin -->
-    <section id="termin" class="section booking">
-      <div class="container booking-box">
-        <h2>Termin vereinbaren</h2>
-        <p>
-          Wegen meiner Podologie‑Ausbildung vergebe ich Termine aktuell
-          <strong>montags bis mittwochs</strong>. Buchen Sie bequem online
-          oder rufen Sie mich an.
-        </p>
-        <div class="hero-actions">
-          <a
-            href="https://desires.salonized.com/widget_bookings/new?layout=standalone&amp;hl=de-DE"
-            class="btn"
-            target="_blank"
-            rel="noopener"
-            >Online buchen</a
-          >
-          <a href="tel:+491794499122" class="btn btn-ghost">0179 4499122</a>
+    <section id="termin" class="section section-alt">
+      <div class="container">
+        <div class="booking-box">
+          <img src="assets/logo-icon.png" alt="" class="booking-icon" loading="lazy" />
+          <h2>Termin vereinbaren</h2>
+          <p>
+            Wegen meiner Podologie‑Ausbildung vergebe ich Termine aktuell
+            <strong>montags bis mittwochs</strong>. Buchen Sie bequem online
+            oder rufen Sie mich an.
+          </p>
+          <div class="actions">
+            <a
+              href="https://desires.salonized.com/widget_bookings/new?layout=standalone&amp;hl=de-DE"
+              class="btn"
+              target="_blank"
+              rel="noopener"
+              >Online buchen</a
+            >
+            <a href="tel:+491794499122" class="btn btn-ghost">0179 4499122</a>
+          </div>
         </div>
       </div>
     </section>
 
     <!-- Kontakt -->
     <section id="kontakt" class="section">
-      <div class="container contact-grid">
-        <div>
-          <p class="eyebrow">Kontakt</p>
-          <h2 class="left">So finden Sie mich</h2>
-          <ul class="contact-list">
-            <li>
-              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 22s7-7 7-12a7 7 0 0 0-14 0c0 5 7 12 7 12z"/><circle cx="12" cy="10" r="2.5"/></svg>
-              <span>Mühlenweg 144<br />26384 Wilhelmshaven</span>
-            </li>
-            <li>
-              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 3h4l2 5-3 2a11 11 0 0 0 6 6l2-3 5 2v4a2 2 0 0 1-2 2A17 17 0 0 1 3 5a2 2 0 0 1 2-2z"/></svg>
-              <span>
-                <a href="tel:+491794499122">0179 4499122</a><br />
-                <a href="tel:+494421774140">04421 774140</a>
-              </span>
-            </li>
-            <li>
-              <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg>
-              <a href="mailto:info@desires-wellness-ammeer.de">info@desires-wellness-ammeer.de</a>
-            </li>
-            <li>
-              <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>
-              <span>Mo – Mi nach Terminvereinbarung</span>
-            </li>
-          </ul>
-          <a
-            href="https://www.google.com/maps/search/?api=1&amp;query=M%C3%BChlenweg+144+26384+Wilhelmshaven"
-            class="btn btn-ghost"
-            target="_blank"
-            rel="noopener"
-            >Route planen</a
-          >
+      <div class="container">
+        <div class="section-head">
+          <p class="script">Kontakt</p>
+          <h2>So finden Sie mich</h2>
+          <span class="divider" aria-hidden="true"></span>
         </div>
-        <img
-          src="assets/img/strand.jpg"
-          alt="Spaziergang am Strand"
-          class="contact-img"
-          loading="lazy"
-          width="1920"
-          height="1280"
-        />
+        <div class="contact-grid">
+          <div class="contact-card">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 22s7-7 7-12a7 7 0 0 0-14 0c0 5 7 12 7 12z"/><circle cx="12" cy="10" r="2.5"/></svg>
+            <h3>Adresse</h3>
+            <p>Mühlenweg 144<br />26384 Wilhelmshaven</p>
+            <a
+              href="https://www.google.com/maps/search/?api=1&amp;query=M%C3%BChlenweg+144+26384+Wilhelmshaven"
+              target="_blank"
+              rel="noopener"
+              >Route planen</a
+            >
+          </div>
+          <div class="contact-card">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 3h4l2 5-3 2a11 11 0 0 0 6 6l2-3 5 2v4a2 2 0 0 1-2 2A17 17 0 0 1 3 5a2 2 0 0 1 2-2z"/></svg>
+            <h3>Telefon &amp; E‑Mail</h3>
+            <p>
+              <a href="tel:+491794499122">0179 4499122</a><br />
+              <a href="tel:+494421774140">04421 774140</a><br />
+              <a href="mailto:info@desires-wellness-ammeer.de">info@desires-wellness-ammeer.de</a>
+            </p>
+          </div>
+          <div class="contact-card">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>
+            <h3>Termine</h3>
+            <p>Montag – Mittwoch<br />nach Vereinbarung</p>
+          </div>
+        </div>
       </div>
     </section>
 
     <footer class="footer">
       <div class="container footer-content">
-        <p>&copy; 2026 BeYou. Fußpflege &amp; Podologin i. A. · Wilhelmshaven</p>
+        <img src="assets/logo-icon.png" alt="" class="footer-icon" loading="lazy" />
+        <p>&copy; 2026 Be you. Fußpflege &amp; Podologin i. A. · Wilhelmshaven</p>
         <p>
           <a href="impressum.html">Impressum</a> ·
           <a href="datenschutz.html">Datenschutz</a>
         </p>
-        <p class="credits">
-          Strandfoto:
-          <a
-            href="https://commons.wikimedia.org/wiki/File:People_enjoying_beach_walk_(Unsplash).jpg"
-            target="_blank"
-            rel="noopener"
-            >Wikimedia Commons</a
-          >, CC0
-        </p>
       </div>
     </footer>
+
     <script>
       // Mobiles Menü nach Klick auf einen Link schließen
       document.querySelectorAll('.navbar ul a').forEach(function (link) {
         link.addEventListener('click', function () {
           document.getElementById('nav-toggle').checked = false;
         });
+      });
+
+      // Vorher/Nachher-Regler
+      document.querySelectorAll('.ba-stage').forEach(function (stage) {
+        var range = stage.querySelector('input');
+        var update = function () {
+          stage.style.setProperty('--pos', range.value + '%');
+        };
+        range.addEventListener('input', update);
+        update();
       });
     </script>
   </body>
